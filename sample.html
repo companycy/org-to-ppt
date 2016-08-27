@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Design Document</title>
+<meta name="author" content="(cy)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:////home/bjcheny/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="file:////home/bjcheny/reveal.js/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:////home/bjcheny/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Design Document</h1><h2 class="author">cy</h2><p class="date">Created: 2016-08-27 Sat 10:26</p>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org3aeeb93">Requirement</a></li>
+<li><a href="#/slide-org32e86cd">Solution</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+
+
+<section>
+<section id="slide-org3aeeb93">
+<h2 id="org3aeeb93">Requirement</h2>
+<div class="outline-text-2" id="text-org3aeeb93">
+</div></section>
+</section>
+<section>
+<section id="slide-org538d385">
+<h3 id="org538d385">Aws opsworks</h3>
+<ul>
+<li>high level services integrated with chef</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org2f0d6b1">
+<h3 id="org2f0d6b1">Requirement</h3>
+<ul>
+<li>case 1</li>
+<li>case 2</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org32e86cd">
+<h2 id="org32e86cd">Solution</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="file:////home/bjcheny/reveal.js/lib/js/head.min.js"></script>
+<script src="file:////home/bjcheny/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'file:////home/bjcheny/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'file:////home/bjcheny/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:////home/bjcheny/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:////home/bjcheny/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:////home/bjcheny/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
